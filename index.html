@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom practice</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>DOM Practice</h1>
+    </div>
+    <div style="display: flex; justify-content: center;align-items: center;">
+        <input type="text" name="task" id="input">
+        <button style="background-color:rgba(128, 0, 128, 0.479); color: #fff;" onclick="myData()">Add Task</button>
+
+    </div>
+    <div style="display: flex; margin-left: 39%;">
+        <ul id="task">
+
+        </ul>
+    </div>
+
+
+    <script>
+        var data = [];
+
+        function myData() {
+            data = document.getElementById('input').value;
+
+            // for (let i = 0; i < data.length; i++) {
+            //     // console.log(data);
+            //     const task = document.getElementById('task');
+
+            // }
+            task.innerHTML += `<li>${data}</li>`;
+
+
+        }
+    </script>
+</body>
+
+</html>
